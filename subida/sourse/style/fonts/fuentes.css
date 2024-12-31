@@ -1,0 +1,41 @@
+/*PACIFICO FONT*/
+@font-face{
+    font-family:'pacifico_font' ;
+    src: url('./font_pacifico/Pacifico-Regular.ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+/*EXO FONTS*/
+@font-face{
+    font-family:'exo_font' ;
+    src: url('./font_exo2/Exo2-Bold.ttf');
+    font-weight: 600;
+    font-style: bold;
+}
+@font-face{
+    font-family:'exo_font' ;
+    src: url('./font_exo2/Exo2-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*QUICKSAND FONTS*/
+@font-face {
+    font-family: 'quicksand_font';
+    src: url(./font_quicksand/Quicksand-Bold.ttf);
+    font-weight: 900;
+    font-style: bold;
+}
+@font-face {
+    font-family: 'quicksand_font';
+    src: url(./font_quicksand/Quicksand-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root{
+    --fuente_principal: "exo_font";
+    --fuente_titulos:"quicksand_font";
+    --fuente_logo:"pacifico_font"
+}

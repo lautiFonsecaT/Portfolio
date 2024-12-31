@@ -1,0 +1,183 @@
+@import url('./colors/colors.css');
+@import url('./fonts/fuentes.css');
+@import url('./anmiaciones.css');
+:root{
+    --tamaño_contenedor: 400px;
+    --tamaño_titulos: 40px;
+    --tamaño_parrafors: 20px;
+}
+
+html{
+    height: 100vh;
+    width: 100vw;
+}
+body{
+    background-color: var(--color_principal);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*HEADER RAIZ*/
+.div_center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header_raiz{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10%;
+    width: 100%;
+    background-color: var(--color_secundario);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 0px 0px 25px 25px;
+    position: fixed;
+    z-index: 100;
+}
+.div_container_logo{
+    height: 100%;
+    width: 200px;
+}
+.div_logo{
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.div_logo>span{
+    width: 100%;
+    text-align: center;
+    font-family: var(--fuente_logo);
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.695);
+}
+.div_logo>span>a{
+    letter-spacing: 1px;
+    font-size: 30px;
+    color: var(--color_fuentes);
+    text-decoration: none;
+}
+.div_logo>span>a:hover{
+    transition: 0.3s;
+    letter-spacing: 6px;
+}
+.div_logo>span>a:not(:hover){
+    transition: 0.3s;
+}
+.div_container_nav{
+    height: 100%;
+    width: 50%;
+}
+.nav_header{
+    height: 100%;
+    width: 100%;
+}
+.nav_header>ul{
+    height: 100%;
+    width: 70%;
+    justify-content: space-around;
+    list-style-type: none;
+}
+.nav_header>ul>li>a{
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--color_fuentes);
+    font-family: var(--fuente_titulos);
+    font-weight: 900;
+}
+.nav_header>ul>li>a:hover{
+    color: var(--color_especial);
+    transition: 0.3s;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.695);
+}
+
+.nav_header>ul>li>a:not(:hover){
+    transition: 0.3s;
+}
+
+
+/*MAIN RAIZ*/
+.main_index{
+    display: flex;
+    position: absolute;
+    height: 80%;
+    width: 100%;
+}
+.article_main_bienvenida{
+    width: 100%;
+    position: absolute;
+    top: 110px;
+    height: var(--tamaño_contenedor);
+}
+.article_main_bienvenida>section{
+    height: 100%;
+    width: 50%;
+}
+.article_main_bienvenida>.section_foto>.div_container_foto{
+    height: 80%;
+    width: 80%;
+}
+.article_main_bienvenida>.section_foto>.div_container_foto>img{
+    height: 100%;
+    width: auto;
+    border-radius: 30px;
+}
+.article_main_bienvenida>.section_introduccion>.div_container_introduccion{
+    height: 80%;
+    width: 80%;
+    color: var(--color_fuentes);
+    align-items: flex-start;
+    flex-direction: column;
+    z-index: 0;
+}
+
+.article_main_bienvenida>.section_introduccion>.div_container_introduccion>h1{
+    font-family: var(--fuente_titulos);
+    font-size: var(--tamaño_titulos);
+    color: var(--color_especial);
+    font-weight: 900;
+}
+.article_main_bienvenida>.section_introduccion>.div_container_introduccion>p{
+    font-size: var(--tamaño_parrafors);
+    font-family: var(--fuente_principal);
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+/*FOOTER RAIZ*/
+.footer_raiz{
+    height: 10%;
+    width: 100%;
+    background-color: var(--color_secundario);
+    position: absolute;
+    bottom: 0;
+}
+.div_container_footer{
+    height: 80%;
+    width: 80%;
+    font-size: 20px;
+    font-family: var(--fuente_logo);
+    color: var(--color_fuentes);
+}
+
+.div_container_footer>span>a{
+    display: flex;
+    position: relative;
+    font-family: var(--fuente_logo);
+    color: var(--color_fuentes);
+    text-decoration: none;
+}
+
+.div_container_footer>span>a:hover{
+
+    animation: subtle-bounce 1s ease-in-out;
+}
+.div_container_footer>span>a:not(:hover){
+    transition: 0.3s;
+}

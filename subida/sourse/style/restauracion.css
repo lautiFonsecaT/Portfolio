@@ -1,0 +1,155 @@
+@import url('colors/colors.css');
+@import url('fonts/fuentes.css');
+@import url('sourse/style/anmiaciones.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.div_center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+html{
+    height: 100vh;
+    width: 100vw;;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+.main_restauracion{
+    height: 100%;
+    width: 100%;
+    background-color: var(--color_principal);
+    
+}
+.article_restauracion{
+    height: 100%;
+    width: 100%;
+}
+.section_restauracion{
+    height: 100%;
+    width: 100%;
+}
+.section_restauracion>div{
+    height: 50%;
+    width: 50%;
+    flex-direction: column;
+}
+.section_restauracion>div>h1{
+    font-family: var(--fuente_logo);
+    font-size: 60px;
+    letter-spacing: 5px;
+    animation: bounce 1s ease-in-out;
+    color: var(--color_fuentes);
+}
+.section_restauracion>div>h1:hover{
+    letter-spacing: 10px;
+    transition: 0.5s;
+}
+.section_restauracion>div>h1:not(:hover){
+    transition: 0.5s;
+}
+.section_restauracion>div>p{
+    font-family: var(--fuente_titulos);
+    font-size: 20px;
+    color: var(--color_especial);
+}
+.section_restauracion>div>p:hover{
+    color: var(--color_especial);
+    transition: 0.5s;
+}
+.redes_sociales{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    height: 30px;
+    width: 50%;
+}
+.redes_sociales>a{
+    width: 40%;
+    height: 100%;
+    background-color:rgba(245, 245, 245, 0.345);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.redes_sociales>a:hover{
+    transition: 0.5s;
+    box-shadow:  5px 5px  15px rgba(0, 0, 0, 0.304);
+    background-color: var(--color_especial);
+}
+.redes_sociales>a:not(:hover){
+    transition: 0.5s;
+}
+.redes_sociales>a>p{
+    color: var(--color_fuentes);
+    font-family: var(--fuente_titulos);
+    font-size: 20px;
+}
+.redes_sociales>a>span{
+    display: flex;
+    width: 20%;
+}
+
+
+/*APARTADOS DE MEDIA QUERIES*/
+
+@media (max-width: 768px) {
+    .section_restauracion>div {
+        height: 80%;
+        width: 90%;
+    }
+    .section_restauracion>div>h1 {
+        font-size: 40px;
+        letter-spacing: 3px;
+    }
+    .section_restauracion>div>p {
+        font-size: 16px;
+    }
+    .redes_sociales {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    .redes_sociales>a {
+        width: 90%;
+        margin: 10px 0;
+    }
+    .redes_sociales>a>p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .section_restauracion>div {
+        height: 60%;
+        width: 80%;
+    }
+    .section_restauracion>div>h1 {
+        font-size: 50px;
+        letter-spacing: 4px;
+    }
+    .redes_sociales {
+        width: 80%;
+    }
+    .redes_sociales>a {
+        width: 40%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .section_restauracion>div {
+        height: 70%;
+        width: 70%;
+    }
+    .redes_sociales {
+        width: 70%;
+    }
+}
