@@ -3,6 +3,7 @@
 @import url('./anmiaciones.css');
 :root{
     --tamaño_contenedor: 400px;
+    --tamaño_botones_menu: 350px;
     --tamaño_titulos: 30px;
     --tamaño_parrafors: 20px;
 }
@@ -71,40 +72,12 @@ body{
 .div_logo>span>a:not(:hover){
     transition: 0.3s;
 }
-.div_container_nav{
-    height: 100%;
-    width: 50%;
-}
-.nav_header{
-    height: 100%;
-    width: 100%;
-}
-.nav_header>ul{
-    height: 100%;
-    width: 70%;
-    justify-content: space-around;
-    list-style-type: none;
-}
-.nav_header>ul>li>a{
-    text-decoration: none;
-    font-size: 20px;
-    color: var(--color_fuentes);
-    font-family: var(--fuente_titulos);
-    font-weight: 900;
-}
-.nav_header>ul>li>a:hover{
-    color: var(--color_especial);
-    transition: 0.3s;
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.695);
-}
 
-.nav_header>ul>li>a:not(:hover){
-    transition: 0.3s;
-}
 
 
 /*-----------------MAIN RAIZ-----------------------*/
 .main_index{
+    flex-wrap: wrap;
     height: 100%;
     width: 100%;
 }
@@ -112,18 +85,17 @@ body{
 
 /*---#--ARTICLE BIENVENIDA--#---*/
 .article_main_bienvenida{
-        height: 50%;
-        width: 60%;
+        flex-wrap: wrap;
+        height: var(--tamaño_contenedor);
+        min-width: 50%;
         border: 2px solid rgba(128, 128, 128, 0.23);
         background-color: #21445bda;
         box-shadow: 2px 2px 15px black;
         border-radius: 10px;
-    
-        /*height: var(--tamaño_contenedor);*/
 }
 .article_main_bienvenida>section{
         height: 100%;
-        width: 50%;
+        min-width: 50%;
 }
 .article_main_bienvenida>.section_foto>.div_container_foto{
         height: 100%;
@@ -156,6 +128,26 @@ body{
     font-family: var(--fuente_principal);
     font-weight: 400;
     line-height: 1.6;
+    text-align: center;
+}
+.article_sections_main{
+    height: var(--tamaño_botones_menu);
+    width: 70px;
+    border: 1px solid black;
+    flex-direction: column;
+}
+.section_articles_menu{
+    min-height: 50%;
+    min-width: 100%;
+    border: 1px solid red;
+}
+.section_articles_menu>button{
+    height: 100%;
+    width: 100%;
+    direction: rtl;
+}
+.section_izquierda>button{
+    writing-mode: vertical-lr;
     text-align: center;
 }
 
