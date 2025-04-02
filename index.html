@@ -18,35 +18,46 @@
     <main class="main_index div_center">
         <article class="article_sections_main div_center">
             <section class="section_articles_menu section_izquierda">
-                <button>Sobre mi</button>
-                <div></div>
+                <button id="about_me">Sobre mi</button>
             </section>
             <section class="section_articles_menu section_izquierda">
-                <button>Estudios</button>
-                <div></div>
+                <button id="studies">Estudios</button>
             </section>
         </article>
-        <article class="article_main_bienvenida div_center" id="inicio">
-            <section class="section_foto div_center">
-                <div class="div_container_foto div_center">
-                    <img src="./Sourse/img/foto_bienvenida.png" alt="foto de presentacion">
-                </div>
+        <article class="article_main div_center" id="article_container">
+            <section class="form_main div_center">
+                <form method="post" id="form" name="form" action="/send-email" class="div_center">
+                    <label for="name">Nombre: </label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Mensaje: </label>
+                    <textarea name="message" id="message" required></textarea>
+
+                    <button type="submit" id="send_email">Enviar</button>
+                </form>
             </section>
-            <section class="section_introduccion div_center">
-                <div class="div_container_introduccion div_center">
-                    <h1>Lautaro Fonseca Tecchio</h1>
-                    <p>Software Developer Trainee/Junior</p>
+            <section class="contacts_main">
+                <div class="div_container_contacts">
+                    <div>
+                        <img src="./Sourse/ico/phone-solid.svg" alt="Icono de movil">
+                        <p>+34600225169</p>
+                    </div>
+                    <div>
+                        <img src="./Sourse/ico/linkedin-in-brands-solid.svg" alt="Icono de linkedin">
+                        <p>Linkedin</p>
+                    </div>
                 </div>
             </section>
         </article>
         <article class="article_sections_main div_center">
             <section class="section_articles_menu section_derecha">
-                <button>Proyectos</button>
-                <div></div>
+                <button id="proyects">Proyectos</button>
             </section>
             <section class="section_articles_menu section_derecha">
-                <button>Contactos</button>
-                <div></div>
+                <button id="contact">Contactos</button>
             </section>
         </article>
     </main>
@@ -55,5 +66,6 @@
             <span><a href="index.html">Lautaro Fonseca Tecchio</a></span>
         </div>
     </footer>
+    <script type="module" src="./Sourse/js/index.js"></script>
 </body>
 </html>

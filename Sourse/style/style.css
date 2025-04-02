@@ -83,8 +83,8 @@ body{
 }
 
 
-/*---#--ARTICLE BIENVENIDA--#---*/
-.article_main_bienvenida{
+/*---#--ARTICLE CONTENEDOR--#---*/
+.article_main{
         flex-wrap: wrap;
         height: var(--tamaño_contenedor);
         min-width: 50%;
@@ -94,22 +94,22 @@ body{
         border-radius: 10px;
         z-index: 10;
 }
-.article_main_bienvenida>section{
+.article_main>section{
         height: 100%;
         min-width: 50%;
 }
-.article_main_bienvenida>.section_foto>.div_container_foto{
+.article_main>.section_foto>.div_container_foto{
         height: 100%;
         width: 50%;
 }
-.article_main_bienvenida>.section_foto>.div_container_foto>img{
+.article_main>.section_foto>.div_container_foto>img{
         height: 80%;
         border: 3px solid var(--color_principal);
         width: auto;
         border-radius: 30px;
         box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.364);
 }
-.article_main_bienvenida>.section_introduccion>.div_container_introduccion{
+.article_main>.section_introduccion>.div_container_introduccion{
         height: 50%;
         width: 90%;
         color: var(--color_fuentes);
@@ -118,30 +118,46 @@ body{
         z-index: 0;
 }
 
-.article_main_bienvenida>.section_introduccion>.div_container_introduccion>h1{
+.article_main>.section_introduccion>.div_container_introduccion>h1{
     font-family: var(--fuente_titulos);
     font-size: var(--tamaño_titulos);
     color: var(--color_especial);
     font-weight: 900;
 }
-.article_main_bienvenida>.section_introduccion>.div_container_introduccion>p{
+.article_main>.section_introduccion>.div_container_introduccion>p{
     font-size: var(--tamaño_parrafors);
     font-family: var(--fuente_principal);
     font-weight: 400;
     line-height: 1.6;
     text-align: center;
 }
+.article_main>.form_main{
+    height: 90%;
+    width: 80%;
+    border: 1px solid red;
+}
+.article_main>.form_main>form{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.article_main>.contacts_main{
+    height: 10%;
+    width: 80%;
+    border: 1px solid black;
+}
 .article_sections_main{
     height: var(--tamaño_botones_menu);
     width: 80px;
     flex-direction: column;
     justify-content: space-around;
+    overflow: hidden;
     z-index: 0;
 }
 .section_articles_menu{
     height: 150px;
     min-width: 100%;
 }
+
 .section_articles_menu>button{
     height: 100%;
     width: 100%;
@@ -167,6 +183,9 @@ body{
 .section_derecha>button{
     writing-mode: vertical-rl;
     text-align: center;
+}
+.section_derecha{
+    z-index: 100;
 }
 
 /*FOOTER RAIZ*/
