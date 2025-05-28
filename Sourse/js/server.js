@@ -10,7 +10,7 @@ app.post('/send-email', upload.none(), (req, res) => {
 
   console.log('solicitud recibida', req.body)
 
-  /*
+  
   const { name, email, message } = req.body;
 
   const transporter = nodemailer.createTransport({
@@ -38,7 +38,7 @@ app.post('/send-email', upload.none(), (req, res) => {
     console.log('Correo enviado:', info.response);
     res.status(200).send('Correo enviado con éxito.');
   });
-  */
+  
 });
 
 app.listen(3000, () => console.log('Servidor corriendo en el puerto 3000'));
