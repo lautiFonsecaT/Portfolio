@@ -35,7 +35,7 @@ body{
     justify-content: center;
     height: 10%;
     width: 100%;
-    background-color: var(--color_secundario);
+    background-color: var(--color_principal);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     border: 1px solid black;
     border-radius: 0px 0px 25px 25px;
@@ -92,7 +92,7 @@ body{
         height: var(--tamaño_contenedor);
         min-width: 50%;
         border: 2px solid rgba(128, 128, 128, 0.23);
-        background-color: #21445bda;
+        background-color: var(--color_secundario);
         box-shadow: 2px 2px 15px black;
         border-radius: 10px;
         z-index: 10;
@@ -105,13 +105,7 @@ body{
         height: 100%;
         width: 50%;
 }
-.article_main>.section_foto>.div_container_foto>img{
-        height: 80%;
-        border: 3px solid var(--color_principal);
-        width: auto;
-        border-radius: 30px;
-        box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.364);
-}
+
 .article_main>.section_introduccion>.div_container_introduccion{
         height: 50%;
         width: 90%;
@@ -290,7 +284,7 @@ body{
 .footer_raiz{
     height: 10%;
     width: 100%;
-    background-color: var(--color_secundario);
+    background-color: var(--color_principal);
     position: absolute;
     bottom: 0;
 }

@@ -1,6 +1,6 @@
 :root{
-    --color_principal: rgb(205, 205, 185);
-    --color_secundario: #21445B;
+    --color_principal: #323050;
+    --color_secundario: #438F68;
     --color_fuentes: #ecf0f1;
-    --color_especial: #5D8A66;
+    --color_especial: #1A6566;
 }
